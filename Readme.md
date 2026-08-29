@@ -4,3 +4,6 @@ I hereby use all my creativity in designing and developing a product centric Web
 The name of the brand is Noor and it rents out Indian Ethnic Clothing and jewellery.
 My Job is to feature these ethnic pieces that Noor provides.
 This will also be my Proof of Work for developing Product Centric websites for Brands/Small Businesses.
+
+
+checking the restoration of folder
