@@ -1,3 +1,6 @@
+import { useEffect } from "react";
+import { setupScrollReveal } from "./scrollReveal";
+
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import WhoWeAre from "./components/WhoWeAre";
@@ -6,7 +9,12 @@ import Contact from "./components/Contact";
 
 import "./App.css";
 
-function App() {
+function App() { 
+  
+  useEffect(() => {
+    setupScrollReveal();
+  }, []);
+
   return (
     <div className="app">
       <Navbar />

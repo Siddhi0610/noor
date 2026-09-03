@@ -4,7 +4,7 @@ import "./Contact.css";
 
 function Contact() {
   return (
-    <section className="contact" id="contact">
+    <section className="contact reveal" id="contact">
 
       <div className="contact-overlay"></div>
 

@@ -4,7 +4,7 @@ import "./ShopNow.css";
 
 function ShopNow() {
   return (
-    <section className="shop-now" id="shop">
+    <section className="shop-now reveal" id="shop">
 
       <h2>Shop Now</h2>
 

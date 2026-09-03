@@ -3,7 +3,7 @@ import "./WhoWeAre.css";
 
 function WhoWeAre() {
   return (
-    <section className="who-we-are" id="about">
+    <section className="who-we-are reveal" id="about">
 
       <div className="who-content">
 
