@@ -2,7 +2,7 @@ import "./Hero.css";
 
 function Hero() {
   return (
-    <section className="hero reveal" id="home">
+    <section className="hero" id="home">
       <div className="hero-overlay"></div>
 
       <div className="hero-content">
