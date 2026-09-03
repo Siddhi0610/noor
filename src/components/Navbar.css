@@ -18,7 +18,20 @@
 }
 
 .nav-links a {
-  transition: opacity 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    text-shadow 0.3s ease,
+    opacity 0.3s ease;
+}
+
+.nav-links a:hover {
+  transform: translateY(-2px);
+
+  text-shadow:
+    0 0 6px rgba(255, 215, 120, 0.8),
+    0 0 14px rgba(255, 190, 70, 0.5);
+
+  opacity: 1;
 }
 
 .nav-links a:hover {

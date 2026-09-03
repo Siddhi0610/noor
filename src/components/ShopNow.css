@@ -31,6 +31,22 @@
 
 .shop-card {
   position: relative;
+
+  transition:
+    transform 0.45s ease,
+    filter 0.45s ease;
+}
+
+.shop-card:hover {
+  transform:
+    perspective(900px)
+    rotateY(-4deg)
+    rotateX(2deg)
+    translateY(-6px);
+
+  filter:
+    drop-shadow(0 0 8px rgba(255, 205, 100, 0.55))
+    drop-shadow(0 0 22px rgba(255, 180, 50, 0.25));
 }
 
 .card-frame {
@@ -69,6 +85,8 @@
   height: 330px;
 
   object-fit: cover;
+
+  transition: transform 0.45s ease;
 }
 
 .card-label {

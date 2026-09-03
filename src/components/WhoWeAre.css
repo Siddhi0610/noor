@@ -31,7 +31,24 @@
 }
 
 .who-image {
-  overflow: hidden;
+  position: relative;
+  overflow: visible;
+
+  transition:
+    transform 0.45s ease,
+    filter 0.45s ease;
+}
+
+.who-image:hover {
+  transform:
+    perspective(900px)
+    rotateY(-4deg)
+    rotateX(2deg)
+    translateY(-6px);
+
+  filter:
+    drop-shadow(0 0 8px rgba(255, 205, 100, 0.55))
+    drop-shadow(0 0 22px rgba(255, 180, 50, 0.25));
 }
 
 .who-image img {
@@ -41,9 +58,6 @@
   object-fit: cover;
   object-position: center;
 
-  transition: transform 0.5s ease;
+  transition: transform 0.45s ease;
 }
 
-.who-image:hover img {
-  transform: scale(1.03);
-}
