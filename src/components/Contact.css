@@ -1,0 +1,115 @@
+.contact {
+  min-height: 600px;
+
+  position: relative;
+
+  background-image: url("/images/contact.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+}
+
+.contact-overlay {
+  position: absolute;
+  inset: 0;
+
+  background: rgba(20, 10, 5, 0.48);
+}
+
+.contact-content {
+  position: relative;
+  z-index: 2;
+
+  width: min(500px, 90%);
+
+  padding: 40px;
+}
+
+.contact-content h2 {
+  font-size: clamp(35px, 5vw, 50px);
+  font-style: italic;
+
+  margin-bottom: 30px;
+}
+
+.contact-item {
+  margin-bottom: 25px;
+}
+
+.contact-item h3 {
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.contact-item p {
+  font-family: "Montserrat", sans-serif;
+
+  font-size: 14px;
+  margin-top: 4px;
+}
+
+@media (max-width: 768px) {
+
+  .navbar {
+    padding: 12px;
+  }
+
+  .nav-links {
+    gap: 12px;
+    font-size: 15px;
+  }
+
+  .hero {
+    min-height: 520px;
+  }
+
+  .hero h1 {
+    font-size: 75px;
+  }
+
+  .who-we-are {
+    padding: 60px 7%;
+  }
+
+  .who-content {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+
+  .who-text p {
+    font-size: 18px;
+  }
+
+  .who-image img {
+    height: 400px;
+  }
+
+  .shop-grid {
+    grid-template-columns: 1fr;
+    gap: 70px;
+    max-width: 400px;
+  }
+
+  .card-frame img {
+    height: 400px;
+  }
+
+  .card-label {
+    left: -25px;
+    right: -25px;
+  }
+
+  .contact {
+    min-height: 550px;
+  }
+
+  .contact-content {
+    padding: 25px;
+  }
+}

@@ -1,0 +1,26 @@
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+
+  display: flex;
+  justify-content: flex-end;
+  padding: 14px 18px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+
+  font-size: 17px;
+}
+
+.nav-links a {
+  transition: opacity 0.3s ease;
+}
+
+.nav-links a:hover {
+  opacity: 0.65;
+}
