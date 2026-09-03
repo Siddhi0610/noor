@@ -1,11 +1,15 @@
 .shop-now {
+  min-height: 100vh;
+
   position: relative;
 
   background: #4b3d00;
 
   padding: 65px 8% 90px;
 
-  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .shop-now h2 {

@@ -1,6 +1,12 @@
 .who-we-are {
+  min-height: 100vh;
+
   background: #a40f29;
+
   padding: 80px 8%;
+
+  display: flex;
+  align-items: center;
 }
 
 .who-content {
