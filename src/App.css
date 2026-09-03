@@ -11,9 +11,33 @@ html {
 }
 
 body {
+  margin: 0;
+  padding: 0;
+
+  width: 100%;
+  min-width: 100%;
+
   font-family: "Cormorant Garamond", serif;
-  background: #4d3e00;
+  background: #4b3d00;
   color: #f5ead7;
+}
+
+#root {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 a {
@@ -24,8 +48,4 @@ a {
 img {
   display: block;
   max-width: 100%;
-}
-
-button {
-  font-family: inherit;
 }

@@ -1,14 +1,10 @@
+import "./ShopNow.css";
+
+
+
 function ShopNow() {
   return (
     <section className="shop-now" id="shop">
-
-      <div className="shop-decoration top-right">
-        ✧ ❧
-      </div>
-
-      <div className="shop-decoration bottom-left">
-        ❧ ✧
-      </div>
 
       <h2>Shop Now</h2>
 
@@ -17,10 +13,10 @@ function ShopNow() {
         <div className="shop-card">
 
           <div className="card-frame">
-            <img
-              src="/images/clothes.jpg"
-              alt="Indian clothing"
-            />
+           <img
+            src={`${import.meta.env.BASE_URL}images/clothes.png`}
+            alt="Noor traditional clothes"
+          /> 
           </div>
 
           <div className="card-label">
@@ -33,7 +29,7 @@ function ShopNow() {
 
           <div className="card-frame">
             <img
-              src="/images/accessories.jpg"
+              src={`${import.meta.env.BASE_URL}images/accessories.png`}
               alt="Indian jewellery and accessories"
             />
           </div>

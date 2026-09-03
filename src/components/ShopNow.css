@@ -1,53 +1,113 @@
-function ShopNow() {
-  return (
-    <section className="shop-now" id="shop">
+.shop-now {
+  position: relative;
 
-      <div className="shop-decoration top-right">
-        ✧ ❧
-      </div>
+  background: #4b3d00;
 
-      <div className="shop-decoration bottom-left">
-        ❧ ✧
-      </div>
+  padding: 65px 8% 90px;
 
-      <h2>Shop Now</h2>
-
-      <div className="shop-grid">
-
-        <div className="shop-card">
-
-          <div className="card-frame">
-            <img
-              src="/images/clothes.jpg"
-              alt="Indian clothing"
-            />
-          </div>
-
-          <div className="card-label">
-            Clothes for Her
-          </div>
-
-        </div>
-
-        <div className="shop-card">
-
-          <div className="card-frame">
-            <img
-              src="/images/accessories.jpg"
-              alt="Indian jewellery and accessories"
-            />
-          </div>
-
-          <div className="card-label">
-            Accessories
-          </div>
-
-        </div>
-
-      </div>
-
-    </section>
-  );
+  overflow: hidden;
 }
 
-export default ShopNow;
+.shop-now h2 {
+  text-align: center;
+
+  font-size: clamp(45px, 6vw, 65px);
+  font-weight: 400;
+
+  margin-bottom: 45px;
+
+  color: #d7a735;
+}
+
+.shop-grid {
+  max-width: 850px;
+  margin: auto;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 110px;
+}
+
+.shop-card {
+  position: relative;
+}
+
+.card-frame {
+  position: relative;
+
+  padding: 10px;
+
+  border-top: 3px solid #c99a2e;
+  border-bottom: 3px solid #c99a2e;
+}
+
+.card-frame::before,
+.card-frame::after {
+  content: "";
+
+  position: absolute;
+
+  top: 7px;
+  bottom: 7px;
+
+  width: 3px;
+
+  background: #c99a2e;
+}
+
+.card-frame::before {
+  left: 0;
+}
+
+.card-frame::after {
+  right: 0;
+}
+
+.card-frame img {
+  width: 100%;
+  height: 330px;
+
+  object-fit: cover;
+}
+
+.card-label {
+  position: absolute;
+
+  left: -50px;
+  right: -50px;
+
+  bottom: 35px;
+
+  padding: 10px 20px;
+
+  background: rgba(100, 35, 20, 0.9);
+
+  color: #f4e6d0;
+
+  text-align: center;
+
+  font-size: 24px;
+
+  z-index: 2;
+}
+
+.shop-decoration {
+  position: absolute;
+
+  color: #d4a62e;
+
+  font-size: 50px;
+
+  opacity: 0.9;
+}
+
+.top-right {
+  right: 10px;
+  top: 10px;
+}
+
+.bottom-left {
+  left: 5px;
+  bottom: 0;
+}

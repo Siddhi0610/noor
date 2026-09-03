@@ -1,3 +1,6 @@
+import "./WhoWeAre.css";
+
+
 function WhoWeAre() {
   return (
     <section className="who-we-are" id="about">
@@ -33,9 +36,9 @@ function WhoWeAre() {
         </div>
 
         <div className="who-image">
-          <img
-            src="/images/who-we-are.jpg"
-            alt="Noor traditional jewellery"
+         <img
+           src={`${import.meta.env.BASE_URL}images/who-we-are.png`}
+           alt="Noor traditional jewellery"
           />
         </div>
 
